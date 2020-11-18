@@ -7,11 +7,10 @@
  */
 package com.gmart.common.messages.core;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+import com.gmart.common.messages.core.responses.Role;
 
 import lombok.Data;
 
@@ -21,10 +20,13 @@ import lombok.Data;
  **/
 
 @Data
-public class ProfileDTO {
+public class UserInfoDTO {
 
-	@JsonProperty("pseudoname")
-	private String pseudoname;
+	@JsonProperty("id")
+	private Long id;
+	
+	@JsonProperty("email")
+	private String email;
 
 	@JsonProperty("firstname")
 	private String firstname;
@@ -32,18 +34,15 @@ public class ProfileDTO {
 	@JsonProperty("lastname")
 	private String lastname;
 
-	@JsonProperty("nickname")
-	private String nickname;
-
 	@JsonProperty("phone")
 	private String phone;
 
-	@JsonProperty("profileDescription")
-	private String profileDescription;
+	@JsonProperty("roles")
+	private Set<Role> roles;
 
-	@JsonProperty("pictures")
-	private List<PictureDTO> pictures = new ArrayList<PictureDTO>();
-
-	@JsonProperty("posts")
-	private List<PostDTO> posts = new ArrayList<PostDTO>();
+	@JsonProperty("username")
+	private String username;
+	
+	@JsonProperty("profile")
+	private ProfileDTO profile;
 }

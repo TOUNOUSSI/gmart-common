@@ -14,8 +14,6 @@ import com.gmart.common.enums.core.PostType;
 
 import lombok.Data;
 
-
-
 /**
  * @author <a href="mailto:youssef.tounoussi@gmail.com">TOUNOUSSI Youssef</a>
  * @create 16 nov. 2020

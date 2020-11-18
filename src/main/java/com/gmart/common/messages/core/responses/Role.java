@@ -5,28 +5,35 @@
  *  All use, disclosure, or reproduction is prohibited unless authorized
  *  in writing by TOUNOUSSI Youssef. All Rights Reserved.
  */
-package com.gmart.common.messages.core;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.gmart.common.enums.core.PictureType;
+package com.gmart.common.messages.core.responses;
+
+import java.io.Serializable;
+import java.util.List;
+
+import com.gmart.common.enums.core.RoleName;
+
+import lombok.Data;
 
 /**
  * @author <a href="mailto:youssef.tounoussi@gmail.com">TOUNOUSSI Youssef</a>
  * @create 16 nov. 2020
  **/
 
-public class PictureDTO {
 
-		@JsonProperty("fileName")
-		private String fileName;
-		
-		@JsonProperty("pictureType")
-		private PictureType pictureType;
+@Data
+public class Role implements Serializable {
 
-		@JsonProperty("fileType")
-	    private String fileType;
-		
-		@JsonProperty("data")
-	    private byte[] data;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+	private Long id;
+
+	private RoleName name;
+
+	private List<Privilege> privileges;
 
 }

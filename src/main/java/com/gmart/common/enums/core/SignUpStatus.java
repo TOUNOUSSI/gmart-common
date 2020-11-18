@@ -5,28 +5,14 @@
  *  All use, disclosure, or reproduction is prohibited unless authorized
  *  in writing by TOUNOUSSI Youssef. All Rights Reserved.
  */
-package com.gmart.common.messages.core;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.gmart.common.enums.core.PictureType;
+package com.gmart.common.enums.core;
 
 /**
  * @author <a href="mailto:youssef.tounoussi@gmail.com">TOUNOUSSI Youssef</a>
  * @create 16 nov. 2020
  **/
 
-public class PictureDTO {
-
-		@JsonProperty("fileName")
-		private String fileName;
-		
-		@JsonProperty("pictureType")
-		private PictureType pictureType;
-
-		@JsonProperty("fileType")
-	    private String fileType;
-		
-		@JsonProperty("data")
-	    private byte[] data;
-
+public enum SignUpStatus {
+	CREATED, NOT_CREATED
 }
