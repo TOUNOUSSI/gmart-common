@@ -43,6 +43,9 @@ public class UserInfoDTO {
 	@JsonProperty("username")
 	private String username;
 	
+	@JsonProperty("pseudoname")
+	private String pseudoname;
+	
 	@JsonProperty("profile")
 	private ProfileDTO profile;
 }
