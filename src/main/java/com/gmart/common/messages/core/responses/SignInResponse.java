@@ -8,6 +8,7 @@
 
 package com.gmart.common.messages.core.responses;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.gmart.common.enums.core.LoginStatus;
 import com.gmart.common.messages.core.UserInfoDTO;
 
@@ -18,11 +19,17 @@ import lombok.Data;
  * @create 16 nov. 2020
  **/
 
-
 @Data
 public class SignInResponse {
-	LoginStatus loginStatus;
-	UserInfoDTO authenticatedUser;
-	String token;
-	CustomError error;
+	@JsonProperty("authenticatedUser")
+	private UserInfoDTO authenticatedUser;
+
+	@JsonProperty("error")
+	private CustomError error;
+
+	@JsonProperty("loginStatus")
+	private LoginStatus loginStatus;
+
+	@JsonProperty("token")
+	private String token;
 }

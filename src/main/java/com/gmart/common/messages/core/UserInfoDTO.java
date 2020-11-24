@@ -37,9 +37,6 @@ public class UserInfoDTO {
 	@JsonProperty("phone")
 	private String phone;
 
-	@JsonProperty("roles")
-	private Set<Role> roles;
-
 	@JsonProperty("username")
 	private String username;
 	
