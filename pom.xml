@@ -7,7 +7,7 @@
 	<groupId>com.gmart.common</groupId>
 	<artifactId>gmart-common</artifactId>
 	<name>GMART API common libraries</name>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<description>Shared libraries between GMART API microservices</description>
 
 	<developers>
