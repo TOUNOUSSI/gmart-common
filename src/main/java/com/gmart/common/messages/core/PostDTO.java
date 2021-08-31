@@ -13,6 +13,7 @@ import java.util.List;
 import com.gmart.common.enums.core.PostType;
 
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author <a href="mailto:youssef.tounoussi@gmail.com">TOUNOUSSI Youssef</a>
@@ -25,4 +26,5 @@ public class PostDTO {
 	private Timestamp postDate;
 	private String description;
 	private List<CommentDTO> comments;
+	private MultipartFile file;
 }

@@ -13,7 +13,7 @@ package com.gmart.common.enums.core;
  **/
 
 public enum PostType {
-	VIDEO("PP"), TEXT(""), IMAGE(""), LINK("CP");
+	VD("VIDEO"), TXT("TEXT"), IMG("IMAGE"), LNK("LINK");
 
 	private String type;
 
